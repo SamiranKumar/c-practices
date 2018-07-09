@@ -1,5 +1,6 @@
 #include<iostream>   /// input output stream header file
 #include<conio.h>
+#include<iomanip>   ///input output manipulation
 
 using namespace std;
 void sumcalculation();
@@ -74,6 +75,33 @@ void sumcalculation(){
     cout<<"Num1: "<<num10 <<endl;
     cout<<noshowpoint;
     cout<<"Num1: "<<num10;
+
+    cout<<endl;
+///set
+    /// setprecision(10);    //setprecision method print 10 numbers with point
+    cout<<setprecision(10);
+    cout<<"Num1: "<<num10;
+    cout<<endl;
+
+    cout<<setprecision(5);
+    cout<<"Num1: "<<num10;
+    cout<<endl;
+
+    cout <<fixed;
+    cout<<setprecision(20);
+    cout<<"Num1: "<<num10;
+    cout<<endl;
+
+
+
+    ///setw(20); set width funtion use for text formating,20 char space form right side
+
+    cout <<setw(30)<<"SUM int num "    <<num1  <<" + " <<num2 <<" = "  <<num3 <<endl;
+    cout<<setw(30)<<"SUM double num " <<num4  <<" + " <<num3 <<" = " <<num5 <<endl;
+    cout<<setw(30)<<"SUB int num "    <<num1  <<" - " <<num2 <<" = "  <<num9 <<endl;
+    cout<<setw(30)<<"MULTIPLECATION int num " <<num1  <<" * " <<num2 <<" = "  <<num6 <<endl;
+    cout<<setw(30)<<"Division int num "    <<num1  <<" / " <<num2 <<" = "  <<num7 <<endl;
+    cout<<setw(30)<<"Reminder int num "   <<num1  <<" % " <<num2 <<" = "  <<num8 <<endl;
 
 
 }
